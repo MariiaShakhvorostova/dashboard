@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div class="wrapper"><span class="part-logo"></span>
+      <aside class="sidebar">
+        <div class="logo__v01">
+          <div class="sidebar__logo"></div><span class="v01"></span>
+        </div>
+        <nav class="sidebar__nav"><a class="sidebar__nav__link dashboard" href="#">Dashboard </a><a class="sidebar__nav__link product" href="#">Product </a><a class="sidebar__nav__link sidebar__nav__link--active customers" href="#">Customers </a><a class="sidebar__nav__link income" href="#">Income </a><a class="sidebar__nav__link promote" href="#">Promote </a><a class="sidebar__nav__link help" href="#">Help </a></nav>
+        <div class="sidebar__footer">
+          <div class="sidebar__footer__info">
+            <div class="photo__evano"></div>
+            <div class="info">
+              <p>Evano</p><span>Project Manager</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="main">
+        <div class="main__header">
+          <h1 class="main__title">Hello Evano 👋🏻</h1>
+        </div>
+        <div class="customers">
+          <div class="main__title__actions__container">
+            <div class="customers__title_members">
+              <p>All Customers</p><span>Active Members</span>
+            </div>
+            <div class="customers__actions">
+              <input class="customers__search" type="text" placeholder="Search">
+            </div>
+          </div>
+          <table class="customers__table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="customers-table"></tbody>
+          </table>
+          <div class="customers__pagination">
+            <div class="pagination">
+              <button class="pagination__button">1</button>
+              <button class="pagination__button">2</button>
+              <button class="pagination__button">3</button>
+              <button class="pagination__button">4</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../src/js/main.js"></script>
+  </body>
+</html>

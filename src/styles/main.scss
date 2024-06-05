@@ -1,0 +1,227 @@
+$primary-color: #5932ea;
+$secondary-color: #eeeeee;
+$active-color: #49b4a9;
+$text-color: #000;
+$bg-color: #fff;
+$sidebar-width: 250px;
+$breakpoint-mobile: 768px;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin transition($properties...) {
+  @each $property in $properties {
+    transition: $property 0.3s;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: $sidebar-width;
+  background-color: $primary-color;
+  background-color: #fff;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include flex-column;
+  justify-content: space-between;
+  padding: 20px;
+  .sidebar__logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-image: url("/dist/imgs/logo.png");
+    width: 195px;
+    height: 39px;
+  }
+  .v01 {
+    background-image: url("/dist/imgs/v.01.png");
+    width: 18px;
+    height: 15px;
+    margin-left: 10px;
+  }
+  .sidebar__nav {
+    margin-left: 50px;
+    margin-right: 50px;
+    .sidebar__nav__link {
+      color: #9197b3;
+      padding: 10px 0;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+      &--active {
+        font-weight: bold;
+      }
+    }
+
+    .dashboard,
+    .customers,
+    .income,
+    .promote,
+    .help {
+      background-size: 24px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .dashboard {
+      background-image: url("/dist/imgs/dashboard-icon.png");
+    }
+
+    .product {
+      background-image: url("/dist/imgs/product-icon.png");
+    }
+
+    .customers {
+      background-image: url("/dist/imgs/customers-icon.png");
+    }
+
+    .income {
+      background-image: url("/dist/imgs/income-icon.png");
+    }
+
+    .promote {
+      background-image: url("/dist/imgs/promote-icon.png");
+    }
+
+    .help {
+      background-image: url("/dist/imgs/help-icon.png");
+    }
+  }
+  .sidebar__footer {
+    display: flex;
+    align-items: center;
+    .sidebar__footer__profile-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+}
+
+.main {
+  margin-left: $sidebar-width;
+  padding: 20px;
+  width: calc(100% - $sidebar-width);
+  .main__header {
+    margin-bottom: 20px;
+  }
+  .main__title {
+    font-size: 24px;
+  }
+  .customers {
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      .customers__search {
+        padding: 5px;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+      }
+    }
+    &__table {
+      width: 100%;
+      border-collapse: collapse;
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid $secondary-color;
+      }
+    }
+    &__pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      .pagination {
+        @include flex-center;
+        .pagination__button {
+          @include transition(background-color, color, transform);
+          padding: 5px 10px;
+          margin: 0 5px;
+          background-color: $secondary-color;
+          color: $text-color;
+          cursor: pointer;
+          &:hover,
+          &--active {
+            background-color: $primary-color;
+            color: #fff;
+            transform: translate(5px, 5px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    .sidebar__nav {
+      flex-direction: row;
+      .sidebar__nav__link {
+        padding: 10px;
+      }
+    }
+  }
+  .main {
+    margin-left: 0;
+    padding: 10px;
+    width: 100%;
+    .customers {
+      &__actions {
+        flex-direction: column;
+        align-items: flex-start;
+        .customers__search {
+          margin-top: 10px;
+          width: 100%;
+        }
+      }
+      &__table {
+        th,
+        td {
+          padding: 5px;
+          font-size: 14px;
+        }
+      }
+      &__pagination {
+        flex-direction: column;
+        align-items: flex-start;
+        .pagination {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

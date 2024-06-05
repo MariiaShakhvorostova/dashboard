@@ -1,0 +1,62 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Dashboard
+    link(rel="stylesheet", href="styles/main.css")
+  body
+    .wrapper
+      span.part-logo
+
+      aside.sidebar
+        .logo__v01
+          .sidebar__logo
+          span.v01
+
+        nav.sidebar__nav
+          a.sidebar__nav__link.dashboard(href="#") Dashboard 
+          a.sidebar__nav__link.product(href="#") Product 
+          a.sidebar__nav__link.sidebar__nav__link--active.customers(href="#") Customers 
+          a.sidebar__nav__link.income(href="#") Income 
+          a.sidebar__nav__link.promote(href="#") Promote 
+          a.sidebar__nav__link.help(href="#") Help 
+
+        .sidebar__footer
+          .sidebar__footer__info
+            .photo__evano
+            .info
+              p Evano
+              span Project Manager
+
+      .main
+        .main__header
+          h1.main__title Hello Evano 👋🏻
+
+        .customers
+          .main__title__actions__container
+            .customers__title_members
+              p All Customers
+              span Active Members
+            .customers__actions
+              input.customers__search(type="text", placeholder="Search")
+
+          table.customers__table
+            thead
+              tr
+                th Customer Name
+                th Company
+                th Phone Number
+                th Email
+                th Country
+                th Status
+            tbody#customers-table
+
+          .customers__pagination
+            .pagination
+              button.pagination__button 1
+              button.pagination__button 2
+              button.pagination__button 3
+              button.pagination__button 4
+
+    script(src="../src/js/main.js")
