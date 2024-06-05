@@ -16,7 +16,7 @@ body {
 }
 
 .status-active {
-  background-image: url("/dist/imgs/active.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/active.png");
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -24,7 +24,7 @@ body {
 }
 
 .status-inactive {
-  background-image: url("/dist/imgs/inactive.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/inactive.png");
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -32,7 +32,7 @@ body {
 }
 
 .part-logo {
-  background-image: url("/dist/imgs/part-logo.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/logo.png");
   width: 50px;
   height: 50px;
   display: none;
@@ -80,13 +80,13 @@ body {
 .sidebar .sidebar__logo {
   font-size: 24px;
   margin-bottom: 20px;
-  background-image: url("/dist/imgs/logo.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/logo.png");
   width: 195px;
   height: 39px;
 }
 
 .sidebar .v01 {
-  background-image: url("/dist/imgs/v.01.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/v.01.png");
   width: 18px;
   height: 15px;
   background-repeat: no-repeat;
@@ -120,7 +120,7 @@ body {
   right: 10px;
   width: 12px;
   height: 14px;
-  background-image: url("/dist/imgs/arrow-grey.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/arrow-grey.png");
   color: #9197b3;
   margin-right: 40px;
 }
@@ -134,7 +134,7 @@ body {
 }
 
 .sidebar .sidebar__nav .sidebar__nav__link:hover::after {
-  background-image: url("/dist/imgs/arrow-white.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/arrow-white.png");
 }
 
 .sidebar__nav a {
@@ -146,27 +146,27 @@ body {
 }
 
 .sidebar .sidebar__nav .dashboard {
-  background-image: url("/dist/imgs/dashboard-icon.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/dashboard-icon.png");
 }
 
 .sidebar .sidebar__nav .product {
-  background-image: url("/dist/imgs/product-icon.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/product-icon.png");
 }
 
 .sidebar .sidebar__nav .customers {
-  background-image: url("/dist/imgs/customers-icon.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/customers-icon.png");
 }
 
 .sidebar .sidebar__nav .income {
-  background-image: url("/dist/imgs/income-icon.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/income-icon.png");
 }
 
 .sidebar .sidebar__nav .promote {
-  background-image: url("/dist/imgs/promote-icon.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/promote-icon.png");
 }
 
 .sidebar .sidebar__nav .help {
-  background-image: url("/dist/imgs/help-icon.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/help-icon.png");
 }
 
 .sidebar .sidebar__footer {
@@ -191,7 +191,7 @@ body {
 .photo__evano {
   width: 42px;
   height: 42px;
-  background: url("/dist/imgs/Evano.png");
+  background: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/Evano.png");
 }
 
 .info span {
@@ -248,7 +248,7 @@ body {
   border: 1px solid #eeeeee;
   border-radius: 5px;
   background-color: rgba(240, 248, 255, 0.629);
-  background-image: url("/dist/imgs/search.png");
+  background-image: url("https://mariiashakhvorostova.github.io/dashboard/dist/imgs/search.png");
   background-position: right 10px center;
   background-repeat: no-repeat;
 }
