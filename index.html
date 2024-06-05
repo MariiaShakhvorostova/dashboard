@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./dist/styles/main.css" />
   </head>
   <body>
-    <div class="wrapper"><span class="part-logo"></span>
+    <div class="wrapper">
+      <span class="part-logo"></span>
       <aside class="sidebar">
         <div class="logo__v01">
-          <div class="sidebar__logo"></div><span class="v01"></span>
+          <div class="sidebar__logo"></div>
+          <span class="v01"></span>
         </div>
-        <nav class="sidebar__nav"><a class="sidebar__nav__link dashboard" href="#">Dashboard </a><a class="sidebar__nav__link product" href="#">Product </a><a class="sidebar__nav__link sidebar__nav__link--active customers" href="#">Customers </a><a class="sidebar__nav__link income" href="#">Income </a><a class="sidebar__nav__link promote" href="#">Promote </a><a class="sidebar__nav__link help" href="#">Help </a></nav>
+        <nav class="sidebar__nav">
+          <a class="sidebar__nav__link dashboard" href="#">Dashboard </a
+          ><a class="sidebar__nav__link product" href="#">Product </a
+          ><a
+            class="sidebar__nav__link sidebar__nav__link--active customers"
+            href="#"
+            >Customers </a
+          ><a class="sidebar__nav__link income" href="#">Income </a
+          ><a class="sidebar__nav__link promote" href="#">Promote </a
+          ><a class="sidebar__nav__link help" href="#">Help </a>
+        </nav>
         <div class="sidebar__footer">
           <div class="sidebar__footer__info">
             <div class="photo__evano"></div>
             <div class="info">
-              <p>Evano</p><span>Project Manager</span>
+              <p>Evano</p>
+              <span>Project Manager</span>
             </div>
           </div>
         </div>
@@ -29,10 +42,15 @@
         <div class="customers">
           <div class="main__title__actions__container">
             <div class="customers__title_members">
-              <p>All Customers</p><span>Active Members</span>
+              <p>All Customers</p>
+              <span>Active Members</span>
             </div>
             <div class="customers__actions">
-              <input class="customers__search" type="text" placeholder="Search">
+              <input
+                class="customers__search"
+                type="text"
+                placeholder="Search"
+              />
             </div>
           </div>
           <table class="customers__table">
@@ -59,6 +77,6 @@
         </div>
       </div>
     </div>
-    <script src="../src/js/main.js"></script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
